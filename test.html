@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<script type="text/javascript" src="./js/account.js"></script>
+		<script type="text/javascript" src="./js/moment.min.js"></script>
+		<script type="text/javascript" src="./js/events.js"></script>
+	</head>
+	<body>
+		test
+	</body>
+</html>
+<script>
+	// test
+	var account = new Account();
+	/*
+	account.isLogin(function(name){
+		if(name==""){
+			console.log("Not yet login");
+		}
+		else{
+			console.log(name+" already login");
+		}
+		// login
+		var name = "jorden";
+		var password = "password";
+		account.login(name, password, afterLogin);
+	});
+	*/
+	afterLogin(1);
+		
+	function afterLogin(fg){ // do something afterLogin
+		if(fg==-2){
+			console.log("Name cannot found");
+		}
+		else if(fg==-1){
+			console.log("Wrong password");
+		}
+		else if(fg==1){
+			console.log("Login success");
+			// load event
+			events = new Events();
+			events.load(function(){ //after
+				console.log(events);
+				//console.log(events.arr[0]);
+				var testent = events.arr[0];
+				//testent.remove(function(){});
+				/*
+				testent.obj.title = "change title";
+				console.log(testent);
+				testent.save(function(){});
+				/*
+				var testEvent = events.arr[0];
+				testEvent.obj.title = "yoyoyo";
+				testEvent.save();
+				console.log(events.arr[0]);
+				*/
+			});
+		}	
+		/*
+		//logout
+		account.logout(function(){ // after logout
+			// check again
+			account.isLogin(function(name){
+				if(name===""){
+					console.log("success logout");
+				}
+				else{
+					console.log("still login");
+				}
+			});
+		});*/
+	}
+
+</script>

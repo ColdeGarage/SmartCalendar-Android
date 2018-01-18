@@ -1,0 +1,111 @@
+h1.text-center{
+   font-family: "Times New Roman";
+   color: #DC143C;
+   background-color: #CD853F;
+   margin-right: 60px;
+   margin-top: 20px;
+   font-weight: bold;
+   font-size: 30px;
+   height: 50px;
+   padding-top:10px;
+   margin-right:65px;
+}
+
+div.form-group{
+	font-family: "微軟正黑體";
+}
+
+button.btn {
+	margin-top:8px;
+	background-color: #A52A2A;
+	border-color: #FF4500;
+	color: white;
+}
+
+body.background{
+	background-color: #EEE8AA;
+}
+
+input.form-improve{
+	width: 300px;
+}
+
+input.form-improve1{
+	width: 780px;
+	height: 400px;	
+}
+
+div.formgroup1{
+	 
+}
+
+div.modal-body{
+	background-color: #EEE8AA;
+}
+
+div.col-lg-4{
+	border-left: 3px;
+	border-color: #D2691E;
+	border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: dotted;
+    /*#F4A460*/;
+}
+button.btn-lg:hover{
+	background-color:#FF6347;
+	color:black;
+	
+}
+button.btn-block:hover{
+	background-color:#FF6347;
+	color:black;
+	
+}
+label.move{
+    margin-left: 20px;
+}
+label.move1{
+    margin-left: 20px;
+}
+
+/*日曆*/
+.main {
+    width:100%;
+    height:550px;
+    border:1px solid black;
+}
+
+.month {
+    background-color:sienna;
+    font:bold 30px verdana;
+    color:white;
+}
+
+.daysofweek {
+    background-color:lightsalmon;
+    font:bold 24px verdana;
+    color:white;
+    }
+
+.days {
+    font-size: 24px;
+    font-family:verdana;
+    color:black;
+    background-color:lightyellow;
+    padding: 2px;
+}
+
+.days #today{
+    font-weight: bold;
+    color: pink;
+}
+/*日曆*/
+
+/***********************************************
+* Basic Calendar-By Brian Gosselin at http://scriptasylum.com/bgaudiodr/
+* Script featured on Dynamic Drive (http://www.dynamicdrive.com)
+* This notice must stay intact for use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+ 
