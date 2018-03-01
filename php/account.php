@@ -60,8 +60,11 @@ else if($action == "isLogin"){
 }
 
 else if($action == "logout"){
-	if(isset($_SESSION["login"]))		
-		unset($_SESSION["login"]); 
+	if(isset($_SESSION["login"])){
+		unset($_SESSION["login"]);
+		unset($_SESSION["ID"]);
+	}
+		 
 }
 
 ?>

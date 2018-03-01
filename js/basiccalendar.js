@@ -25,7 +25,7 @@ function buildCal(m, y, cM, cH, cDW, cD, brdr){
         if (x==scanfortoday){ //DD added
             x='<span id="today">'+x+'</span>' //DD added
         }
-        t+='<td class="'+cD+'"><button type="button" class="btn btn-info btn-lg">'+x+'</button></td>';
+        t+='<td class="'+cD+'">'+x+'</td>';
         if(((i)%7==0)&&(i<36)){
             t+='</tr><tr align="center">';
         }

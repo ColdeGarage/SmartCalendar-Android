@@ -11,9 +11,17 @@ h1.text-center{
    margin-right:65px;
 }
 
+body{
+	font-family: "微軟正黑體";
+}
 div.form-group{
 	font-family: "微軟正黑體";
 }
+
+button.home{
+    background-color: #CD853F;
+}
+
 
 button.btn {
 	margin-top:8px;
@@ -36,7 +44,7 @@ input.form-improve1{
 }
 
 div.formgroup1{
-	 
+	 
 }
 
 div.modal-body{
@@ -68,6 +76,36 @@ label.move{
 }
 label.move1{
     margin-left: 20px;
+}
+.table{
+	table-layout: fixed;
+}
+tr .list-title{
+	width: 50px;
+	text-align: center;
+}
+tr .list-imp{
+	width: 30px;
+	text-align: center;
+}
+tr .list-tim{
+	width: 40px;
+	text-align: center;
+}
+tr .list-edit{
+	width: 60px;
+	text-align: center;
+}
+tr td{
+	text-align: center;
+	vertical-align:middle;
+	word-wrap: break-word;
+}
+#spinner1{
+	width:30px;
+}
+#spinner2{
+	width:30px;
 }
 td{
     text-align: center;

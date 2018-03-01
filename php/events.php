@@ -65,6 +65,7 @@ else if($action == "saveEvent"){
 	if($event->ID==0){// it a new event
 		print_r($event);
 		$mysqli = new mysqli($dbhost, $dbuser,$dbpass, $dbname);
+		$mysqli->query("SET NAMES `UTF8`");
 		$sql = "INSERT INTO `event` (`ID`, `accountID`, `title`, `content`, `priority`, `startTime`, `notiTime`, `emoji`, `categoryID`) 
 			VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?)";
 		$stmt = $mysqli->prepare($sql);
@@ -81,6 +82,7 @@ else if($action == "saveEvent"){
 		echo "already have!!\n";
 		print_r($event);
 		$mysqli = new mysqli($dbhost, $dbuser,$dbpass, $dbname);
+		$mysqli->query("SET NAMES `UTF8`");
 		$sql = "UPDATE `event` SET `title` = ?, `content` = ?,`priority` = ?, `startTime` = ?, `notiTime` = ?, `emoji` = ?,`categoryID` = ? WHERE `event`.`ID` = $event->ID ";
 
 		$stmt = $mysqli->prepare($sql);

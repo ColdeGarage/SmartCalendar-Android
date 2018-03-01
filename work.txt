@@ -1,0 +1,31 @@
+// ready to do
+account:
+	account sing up
+	account sing up using email comfirming
+	save login status using cookie
+
+feature:
+	Notifications API  
+	Notifications(app)
+	add to desktop(app)
+	emoji picker
+	calender:
+		show event on the calender
+	handle add event with no startTime or notiTime
+	handle add event with a period of time
+	category system
+	sync with google calender
+	fliter:
+		get first 20 events 
+		see specific category
+	
+display:
+	animation
+	responsive
+	
+// V0.2 beta
+It help you know best thing you shoud do right now!!!!
+	simple login system with out cookie and sing up
+	add,edit,remove event online
+	sort automatically by priority and time
+	you can set time to remind you doing it before deadline
