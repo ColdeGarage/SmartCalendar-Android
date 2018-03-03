@@ -10,8 +10,6 @@ $dbuser = "root";
 $dbpass = "";
 $dbname = "OnlineTodo";
 
-$property_num = 
-
 $eventProperty = array(
 	"ID",
 	"accountID",
