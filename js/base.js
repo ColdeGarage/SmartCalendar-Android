@@ -3,6 +3,8 @@ var account;
 var events;
 var file;
 
+moment.locale('zh-tw'); 
+
 function loadPage(){  // do this when load page    
     //get the button ID
     console.log("run load page");
@@ -14,9 +16,7 @@ function loadPage(){  // do this when load page
     
     login = document.getElementById("Login");
     identity = document.getElementById("Identity");
-    logout = document.getElementById("Logout");
-    
-    //moment.locale('zh-tw');     //***不能放在這裡!!***//
+    logout = document.getElementById("Logout");    
     
     console.log(identity);
     account = new Account();

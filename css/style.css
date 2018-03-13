@@ -1,0 +1,78 @@
+/* 
+ * color code
+ * #f06543
+ * #e8e9eb
+ * #e0dfd5
+ * #313638
+ * #f09d51
+ */
+body{
+    background-color: #e0dfd5;
+    color: #313638;
+    font-family: Microsoft JhengHei, sans-serif;
+    letter-spacing: 0.05rem;  
+    padding-top: 0px;
+}
+/* ===================== style ================== */
+.btn{
+    color: #e8e9eb;
+    background-color: #f06543;
+    height: 2rem;
+    font-size: 1rem;
+    padding-top: 0rem;
+}
+.btn:hover{
+    background-color: #c4563b;
+}
+
+/* ======================= header ================== */
+header{
+    background-color: #f09d51;
+    height: 3rem;
+    text-align: center;
+}
+header::after{ /* clearfix */
+    content: "";
+    clear: both;
+    display: table;  
+}
+.title{
+    color: #e8e9eb;
+    font-size: 20pt;
+}
+header .btn{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#account-btn{
+    float: right;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+#menu-btn{
+    float: left;
+    margin-left: 0.5rem;
+}
+#add-event-btn{
+    margin-left: 0.5rem;
+    float: left;
+}
+
+/* ============ login modal============= */
+#login-modal .modal-header{
+    background-color: #f09d51;
+    color: #e8e9eb;
+}
+#login-modal .modal-body{
+    background-color: #e0dfd5;
+}
+#login-modal .modal-footer{
+    background-color: #f09d51;    
+}
+#login-modal p{
+    padding-top: 1rem;
+}
+#login-modal input{
+    padding-left: 0.5rem;
+}

@@ -1,7 +1,18 @@
+body{
+	font-family: "微軟正黑體";
+}
+
+
+
+
+
+
+
+
 h1.text-center{
    font-family: "Times New Roman";
    color: #DC143C;
-   background-color: #CD853F;
+   background-color: rgb(204, 122, 41);
    margin-right: 60px;
    margin-top: 20px;
    font-weight: bold;
@@ -9,10 +20,7 @@ h1.text-center{
    height: 50px;
    padding-top:10px;
    margin-right:65px;
-}
-
-body{
-	font-family: "微軟正黑體";
+   
 }
 div.form-group{
 	font-family: "微軟正黑體";
@@ -30,7 +38,7 @@ button.btn {
 	color: white;
 }
 
-body.background{
+body{
 	background-color: #EEE8AA;
 }
 
@@ -41,10 +49,6 @@ input.form-improve{
 input.form-improve1{
 	width: 780px;
 	height: 400px;	
-}
-
-div.formgroup1{
-	 
 }
 
 div.modal-body{

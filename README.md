@@ -1,7 +1,23 @@
 # Good To-do-list - for stupid person
 ##	目錄
+##  ???
+    目前在更改index.html中,舊的可以用的在index_old.html,app資料夾是放app的檔案的,不過我不知道要放什麼
+##  功能性需求？（待補）
+    1. 可註冊﹑登入﹑登出的帳戶系統，可以記得帳戶內的事情，讓他在手機電腦都能存取
+    2. 事件能儲存，讀取，更新，刪除
+    3. 根據優先度，時間等等，排出最適當的順序，讓使用者可以從第一項開始做就好了
+    4. 可以設定多久以前提醒，並將在提醒時間內的重要性往上排名
+    5. 可以為事件設定顏色，為顏色設定名字，還有一個filter可以單獨顯示不同顏色的事件
+##  非功能性需求？
 
 ## 	特色
+*   主要配色：
+    <span style="color:#f06543;"> #f06543 </span>
+    <span style="color:#e8e9eb;"> #e8e9eb </span>
+    <span style="color:#e0dfd5;"> #e0dfd5 </span>
+    <span style="color:#313638;"> #313638 </span>
+    <span style="color:#f09d51;"> #f09d51 </span>
+
 *   為你的事件加一個可愛的emoji吧
 *	目前排序 : 是否做完 > 重要性 > 是否提醒 > 時間先後 
 *	目前事件排序 :   
@@ -75,7 +91,7 @@ web的主畫面
 ##	開發日誌
 ##	未來功能
 
-<style>
+<style type="text/css">
     .web{
         color: rgb(231, 69, 69);
     }
