@@ -32,9 +32,15 @@
         <button type="button" id="menu-btn" class="btn"> memu </button>
         <button type="button" id="add-event-btn" class="btn"> add event </button>
         <span class="title"> Good Todo List </span>
-        <button type="button" id="account-btn" class="btn" data-toggle="modal" data-target="#login-modal"> 
-            account 
+        <button type="button" id="login-btn" class="btn" data-toggle="modal" data-target="#login-modal"> 
+            sign in
         </button>
+        <button type="button" id="account-btn" class="btn dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            username
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" onclick="clickLogout()">Logout</a>
+        </div>
     </header>
     <!-- =============== /header ======================= -->
     <!-- =============== #login modal ================== -->

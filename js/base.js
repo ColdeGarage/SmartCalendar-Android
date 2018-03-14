@@ -14,7 +14,7 @@ function loadPage(){  // do this when load page
     
     var Edit = document.getElementById("Edit");
     
-    login = document.getElementById("Login");
+    login = document.getElementById("login-btn");
     identity = document.getElementById("Identity");
     logout = document.getElementById("Logout");    
     
@@ -69,12 +69,11 @@ function clickLogin(){ // do this when click login button
     
     var Edit = document.getElementById("Edit");
     
-    login = document.getElementById("Login");
-    identity = document.getElementById("Identity");
-    logout = document.getElementById("Logout");
+    loginBtn = document.getElementById("login-btn");
+    accountBtn = document.getElementById("account-btn");
 
-    name = document.getElementById("acc").value;
-    password = document.getElementById("pas").value;
+    name = document.getElementById("modal-account").value;
+    password = document.getElementById("modal-password").value;
     
     //ask the server
     // do after receiving status
@@ -88,11 +87,9 @@ function clickLogin(){ // do this when click login button
         }
         else if (fg == 1){
             //alert("歡迎進入 EASY TO DO LIST!");
-            login.style.display = "none";
-            identity.style.display = "block";
-            identity.innerHTML = name;
-            logout.style.display = "block";
-            Edit.style.display = "block";
+            loginBtn.style.display = "none";
+            accountBtn.style.display = "block";
+            accountBtn.innerHTML = name;
             loadPage();
         }
     });
@@ -104,31 +101,30 @@ function clickLogout(){  //do this when click logout button
     var identity;
     var logout;
     
-    var empty_message = document.getElementById("empty-message");
-    var todo_table = document.getElementById("todo-list-table");
+    // var empty_message = document.getElementById("empty-message");
+    // var todo_table = document.getElementById("todo-list-table");
     
-    var input = document.getElementById("input");
-    var calendar = document.getElementById("calendar");
+    // var input = document.getElementById("input");
+    // var calendar = document.getElementById("calendar");
     
-    var Edit = document.getElementById("Edit");
+    // var Edit = document.getElementById("Edit");
     
     empty_message.removeAttribute("style");
     //console.log(events.arr.length);
     for (var i = 0; i < events.arr.length; i++){
         todo_table.rows[i + 1].style.display = "none";
     }
-    login = document.getElementById("Login");
-    identity = document.getElementById("Identity");
-    logout = document.getElementById("Logout");
 
-    login.style.display = "block";
-    identity.style.display = "none";
-    logout.style.display = "none";
+    // change header
+    loginBtn = document.getElementById("login-btn");
+    accountBtn = document.getElementById("account-btn");
+    loginBtn.style.display = "block";
+    logoutBtn.style.display = "none";
     
-    input.style.display = "none";
-    calendar.style.display = "block";
+    // input.style.display = "none";
+    // calendar.style.display = "block";
     
-    Edit.style.display = "none";
+    // Edit.style.display = "none";
     
     account.logout(function(){
         events = "undefined";

@@ -37,7 +37,6 @@ header::after{ /* clearfix */
     display: table;  
 }
 .title{
-    color: #e8e9eb;
     font-size: 20pt;
 }
 header .btn{
@@ -45,7 +44,13 @@ header .btn{
     margin-bottom: 0.5rem;
 }
 
+#login-btn{
+    float: right;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
 #account-btn{
+    display: none;
     float: right;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
